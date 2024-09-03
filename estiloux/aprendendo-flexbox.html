@@ -6,10 +6,14 @@
     <title>Layouts flexíveis com flexbox</title>
     <style>
         section {
+            /* container flex */
             display: flex;
-            justify-content: base; /*como os itens vão ser distribuídos*/
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start; /*alinhamento da direção*/
+            align-items: stretch; /* ao contrário da direção */
 
-            
+
             width: 700px;
             height: 500px;
             margin-left: auto;
@@ -18,8 +22,14 @@
         }
 
         article {
+
+            display: flex;
+            justify-content: center; /* Alinha na horizontal */
+            align-items: center; /* Alinha na vertical */
             width: 100px;
             height: 100px;
+            
+            
             margin-bottom: 10px;
             background-color: salmon;
             border: 1px dashed grey;
@@ -30,11 +40,19 @@
 </head>
 <body>
 
+    <!-- container - flex -->
     <section>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
+        <!-- itens do flex -->
+        <article>Item 1</article>
+        <article>Item 2</article>
+        <article>Item 3</article>
+        <article>Item 4</article>
+        <article>Item 5</article>
+        <article>Item 6</article>
+        <article>Item 7</article>
+        <article>Item 8</article>
+        <article>Item 9</article>
+        <article>Item 10</article>
     </section>
     
 </body>
